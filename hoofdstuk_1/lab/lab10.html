@@ -1,0 +1,95 @@
+<!-- website RadioGaGa -->
+<!DOCTYPE html>
+<html lang="nl">
+ <head>
+ 	<link rel="stylesheet" href="../style.css">
+
+  	<meta charset="UTF-8">
+    <meta name="author" content="Xavier">
+    <meta name="robots" content="all">
+    <meta name="description" content="RadioGaGa marketing">
+    <meta name="keywords" content="muziek">
+    <meta name="copyright" content="copyright">
+
+ <title>Lab 10</title>
+ </head>
+ <body>
+ 	<nav>		
+ 		<ul>
+ 			<li><a href="index.html">Home</a></li>
+ 			<li><a href="playlist.html">Playlist</a></li>
+ 			<li><a href="formulier.html">Formulier</a></li>
+ 			<li><a href="contact.html">Contact</a></li>
+ 		</ul>
+ 	</nav>
+
+ 	<div id="logo">
+ </div>
+
+
+ 	<main>
+ 	<form name="formulier" action= "mailto: postmaster@radiogaga.com" method= "post">
+ 		<fieldset>
+ 			<legend>Inschrijf Formulier</legend>
+
+ 			<select required name="concerten" id="concerten">
+ 				<option value="0">Kies een Cursus</option>
+ 				<option value="Manu Chau">Zwemmen</option>
+ 				<option value="Evanescence">Lopen</option>
+ 				<option value="Shade">Leven</option>
+ 			</select> <br>
+
+ 			<select required name="concerten" id="concerten">
+ 				<option value="0">Kies een locatie</option>
+ 				<option value="Manu Chau">Den Haag</option>
+ 				<option value="Evanescence">Rusland</option>
+ 				<option value="Shade">Mars</option>
+ 			</select> <br>
+ 			<label for="datum">Geboortedatum:</label><br>
+			<input required type="date" name="datum" id="datum"><br>
+
+			Selecteer Opleiding:
+			BOL: <input type="radio" name="geslacht" value="M">
+			BBL: <input type="radio" name="geslacht" value="V"><br>
+
+ 			<input required type="text" id="naam" name="naam" placeholder="Voornaam"><br>
+			<input required type="text" id="naam" name="naam" placeholder="Achternaam"><br>
+			<input required type="text" id="naam" name="naam" placeholder="Adres"><br>
+			<input required type="text" id="naam" name="naam" placeholder="Woonplaats"><br>
+ 			<input required type="email" id="email" name="email" placeholder="E-mail"><br>				
+ 			<input required type="mobiel" id="mobiel" name="mobiel" placeholder="Mobiel"><br>
+ 		
+
+			<label for="abonnementen">Geef je voorkeur aan:</label><br>
+			Avondschool:
+			<input type="checkbox" name="nieuwsbrief" id="nieuwsbrief" value="Avondschool"><br>
+			Weekendschool:
+			<input type="checkbox" name="agenda" id="agenda" value="Weekendschool"><br>
+			Geen voorkeur:
+			<input type="checkbox" name="agenda" id="agenda" value="geen voorkeur"><br>
+			<label for="ranking">Wat is je opleidingsniveau</label><br>
+			<input type="range" name="ranking" id="ranking" min="1" max="200">
+ 		</fieldset>
+
+ 		<input type="submit" name="verzend" name="verzend" value="verzend">
+ 	</form>
+ 		<div id="pager">
+ 			<div id="vorige">
+ 				<a href="playlist.html"> &lt; </a>
+ 			</div>
+ 			<div id="volgende">
+ 				<a href="contact.html"> &gt;</a>
+ 			</div>
+ 		</div>
+ 	</main>
+
+ 	<footer>
+ 		<a href="#top"><img src="images/twitter.png" alt="x" ></a>
+		<a href="#top"><img src="images/youtube.png" alt="x" ></a>
+ 		<a href="#top"><img src="images/facebook.png" alt="x" ></a>
+ 		<p> Copyright &copy; 2019 <i>Ontworpen door: Xavier van Ijperen</i>
+ 		Alle rechten voorbehouden</p>
+ 	</footer>
+
+ </body>
+</html>
