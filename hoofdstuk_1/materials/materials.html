@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8">
+		<title>Materials design</title>
+		<link rel="stylesheet" href="materials.css">
+	</head>
+	<body>
+		<div class="header">
+			<input type="checkbox" id="menu" class="menu">
+			<label class="menu-cirkel" for="menu">
+				<span class="menu-streep"></span>
+			</label>
+			<nav class="drawer">
+				<ul>
+					<li>Card 1</li>
+					<li>Card 2</li>
+					<li>Card 3</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="tabs">
+			<div class="tab" id="tab1" onclick=
+			"document.getElementById('card1').style.display='block';
+			 document.getElementById('card2').style.display='none';
+			 document.getElementById('card3').style.display='none';">
+			 Tab 1
+			</div>
+			<div class="tab" id="tab2" onclick=
+			"document.getElementById('card1').style.display='none';
+			 document.getElementById('card2').style.display='block';
+			 document.getElementById('card3').style.display='none';">
+			 Tab 2
+			</div>
+			<div class="tab" id="tab3" onclick=
+			"document.getElementById('card1').style.display='none';
+			 document.getElementById('card2').style.display='none';
+			 document.getElementById('card3').style.display='block';">
+			 Tab 3
+			</div>
+		</div>
+		<div class="cards" id="card1" style="display: none;">
+			<div class="content-left">
+				Card 1
+				<div class="x-icon" onclick=
+				"document.getElementById('card1').style.display='none';">
+				x</div>
+			</div>
+			<div class="content-right"> Content 1 </div>
+		</div>
+		<div class="cards" id="card2" style="display: none;">
+			<div class="content-left">
+				Card 2
+				<div class="x-icon" onclick=
+				"document.getElementById('card2').style.display='none';">
+				x</div>
+			</div>
+			<div class="content-right"> Content 2 </div>
+		</div>
+		<div class="cards" id="card3" style="display: none;">
+			<div class="content-left">
+				Card 3
+				<div class="x-icon" onclick=
+				"document.getElementById('card3').style.display='none';">
+				x</div>
+			</div>
+			<div class="content-right"> Content 3 </div>
+		</div>
+	</body>
+</html>
