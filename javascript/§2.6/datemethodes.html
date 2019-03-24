@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>Date methodes</title>
+</head>
+<body>
+
+	<script>
+//Opgave 51 §2.6
+//Codeer de volgende twee array's
+var maanden = new Array('Januari','Februari','Maart','April','Mei','Juni','Juli','Augustus','September','Oktober','November','December');
+var weekdag = new Array('Zondag','Maandag','Dinsdag','Woensdag','Donderdag','Vrijdag','Zaterdag')
+
+//Maak gebruik van deze 2 array's om de systeemdatum in het Nederlands te vertalen.
+var vandaag = new Date();
+var maand = maanden[vandaag.getMonth()];
+var wdag = weekdag[vandaag.getDay()];
+var dag = vandaag.getDate();
+var jaar = vandaag.getFullYear();
+document.write("<br>Opgave 51: Vandaag is het: " + vandaag);
+
+document.write("<br><br> Opgave 51: Vandaag is het: " + wdag +" "+ dag +" "+ maand +" " + jaar);
+
+	</script>
+</body>
+</html>
