@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+   <meta charset=UTF-8>
+
+   <title>Lab 07</title>
+
+</head>
+<body>
+  <h3> lab 07</h3>
+  <p>Factuur</p>
+   <script type="text/javascript">
+
+    //lab 07 opdracht
+       var bezorgkosten = 15;
+       var woonplaats = prompt("Wat is uw woonplaats?");
+       var postcode = prompt("Wat is uw postcode?");
+       if(woonplaats =="Amsterdam" && postcode > "1000" && postcode < "2000"){
+        bezorgkosten = 0;
+        alert("U betaald geen bezorgkosten!");
+       }
+       else{
+        alert("U moet bezorgkosten betalen");
+       }
+      //lap 06 opdracht
+       var vandaag = new Date();
+       mm = vandaag.getMonth()+1;
+       dd = vandaag.getDate();
+       jjjj = vandaag.getFullYear();
+       document.write("Factuurdatum:" + dd + '-' + mm + '-' + jjjj);
+
+
+
+       var dag = 86400000;
+       betaaldatum = vandaag.getTime() + (dag * 5);
+       betaaldatum = new Date(betaaldatum);
+       mm = betaaldatum.getMonth()+1;
+       dd = betaaldatum.getDate();
+       jjjj = betaaldatum.getFullYear();
+       document.write("<br>Betaaldatum:" + dd + '-' + mm + '-' + jjjj);
+
+
+
+      var klantnaam = prompt("Voer je eigen naam in");
+      var aantal = parseInt(prompt("Aantal boeken te bestellen?"));
+      var titel = "JavaScript";
+      var prijs = 29.90;
+      var bedrag = aantal * prijs;
+      var btw = (bedrag / 100) * 6;
+      var totaal = bedrag + btw + bezorgkosten;
+
+
+      document.write("<br>Bedankt voor je bestelling: " + klantnaam);
+      document.write("<br>Woonplaats........" + woonplaats);
+      document.write("<br>Postcode........." + postcode);
+      document.write("<br>Boektitel......... " + titel);
+      document.write("<br>Aantal te bestellen... " + aantal);
+      document.write("<br>Prijs per boek........ " + prijs.toFixed(2));
+      document.write("<br>Bedrag............. " + bedrag.toFixed(2));
+      document.write("<br>BTW................. " + btw.toFixed(2));
+      document.write("<br>Totaal inclusief BTW en bezorgkosten... " + totaal.toFixed(2));
+   </script>
+</body>
+</html>

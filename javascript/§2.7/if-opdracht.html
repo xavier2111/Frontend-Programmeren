@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8">
+		<title>If-opdracht</title>
+	</head>
+	<body>
+		<script>
+		//Opgave 52-55 §2.7
+
+		//Opgave 52
+		/*
+			doorgaan = confirm('Opgave 52: Doorgaan?');
+		
+			if(doorgaan == true){
+				alert ('Welkom bij de if-opdracht');
+			}
+		
+
+		//Opgave 53
+			if(doorgaan == true){
+				alert ('Opgave 53: Klik op OK om te beginnen');
+			} else {
+				alert('Tot ziens!');
+			}
+		//Opgave 54
+			if(doorgaan == true){
+				leeftijd = parseInt(prompt('Wat is je leeftijd?'));
+				if(leeftijd < 17){
+					leerplichtig = true;
+				} else {
+					leerplichtig = false;
+				}
+				gediplomeerd = confirm('Heb je je diplome behaald?');
+				if(leerplichtig && !gediplomeerd){
+					alert('Doorstuderen!');
+				} 
+				if(!leerplichtig && !gediplomeerd){
+					alert('Je bent niet leerplichtig EN niet gediplomeerd');
+				}
+				if(gediplomeerd || !leerplichtig){
+					alert('Je bent gediplomeerd OF niet leerplichtig OF allebei');
+				}
+			}
+			*/
+		//Opgave 55
+			credit = confirm("Heeft u een credit card?");
+			leeftijd = parseInt(prompt('Wat is je leeftijd?'));
+			if(leeftijd > 18 && credit){
+				alert("U mag 1000 euro lenen");
+			}
+			else if(leeftijd > 18 && !credit){
+				alert("U mag 500 euro lenen");
+			}
+			else{
+				alert("U mag geen geld lenen");
+			}
+
+
+
+		</script>
+	</body>
+	</html>
