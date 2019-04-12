@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+   <meta charset=UTF-8>
+
+   <title>Lab 08</title>
+
+</head>
+<body>
+  <h3> lab 08</h3>
+   <script type="text/javascript">
+var maanden = new Array('Jan','Feb','Mar','April','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec');
+var weekdag = new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat')
+
+//Maak een vandaag date object
+var vandaag = new Date();
+var maand = maanden[vandaag.getMonth()];
+var wdag = weekdag[vandaag.getDay()];
+var dag = vandaag.getDate();
+var jaar = vandaag.getFullYear();
+var nu = wdag +" "+ maand +" "+ dag +" " + jaar;
+
+//Toon vandaag
+document.write("Vandaag is: " + nu);
+
+//Maak een factuur date object
+	var factuur = new Date(2019, 3, 25);
+	var fmaand = maanden[factuur.getMonth()];
+	var fwdag = weekdag[factuur.getDay()];
+	var fdag = factuur.getDate();
+	var fjaar = factuur.getFullYear();
+	var fnu = fwdag + " " + fmaand + " " + fdag + " " + jaar;
+
+// Toon factuur
+	document.write("<br>Factuurdatum is: " + fnu);
+
+
+    var betaaldatum = new Date();
+    	betaaldatum.setDate(vandaag.getDate()+30);
+    var bmaand = maanden[betaaldatum.getMonth()];
+	var bwdag = weekdag[betaaldatum.getDay()];
+	var bdag = betaaldatum.getDate();
+	var bjaar = betaaldatum.getFullYear();
+	var bnu = bwdag + " " + bmaand + " " + bdag + " " + jaar;
+
+document.write("<br>Betaaldatum: " +bnu);
+
+	if(bnu == vandaag){
+	document.write("<br>Meld Incasso bureau");
+}else{
+	var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+	var today = new Date();
+
+var diffDays = Math.round(Math.abs((today.getTime() - betaaldatum.getTime())/(oneDay)));
+document.write("<br>U hebt nog " + diffDays+ " dagen om te betalen.");
+
+}
+
+   </script>
+</body>
+</html>
