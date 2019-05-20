@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FlashTix</title>
+		<meta name="viewport"
+				content="width=device-wwidth, initial-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js">
+		</script>
+
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
+		</script>
+		<link rel="stylesheet" href="flashtix.css">
+		<script src="flashtix.js<"></script>
+	</head>
+	<body>
+		<div data-role="page" class="page" id="homepage">
+			<div class="header" data-role="header" data-theme="b">
+				<div class="nav" data-role="controlgroup">
+					<div class="ui-grid-b">
+						<div class="ui-block-a">
+							<a class="knop" href="#homepage"
+								data-role="button"
+								data-icon="home"
+								data-iconpos="left">Home</a>
+						</div>
+						<div class="ui-block-b">
+							<a class="knop" href="#homepage"
+							data-role="button">Welkom</a>
+						</div>
+						<div class="ui-block-c">
+							<a class="knop" href="#lastminutepage"
+								data-role="button"
+								data-icon="arrow-r"
+								data-iconpos="left"
+								data-transition="slidedown">Lastminute</a>
+						</div>
+					</div><!-- /grid-b -->
+				</div><!-- nav -->
+			</div><!-- /header -->
+
+
+			<div data-role="content" class="content" id="lastminutecontent"><br>
+            <ul data-role="listview">
+                <li id="pop" data-role="list-divider"
+                data-theme="b"> POP</li>
+                <li id="shakira-concert">
+                   <a href="#shakira-biopage">
+                        <img class="poster" src="shakiraposter.jpg">
+                        <h3>shakira</h3>
+                        <p>AmsterdamArena</p>
+                        <p>vandaag 22:00 uur</p>
+                    </a>
+                    <a href="#shakira-biopage"
+                    data-transition="flip">
+                </a>
+                </li>
+                <li id="shakira-concert">
+                   <a href="#shakira-biopage">
+                        <img class="poster" src="bruno.jpg">
+                        <h3>bruno mars</h3>
+                        <p>AmsterdamArena</p>
+                        <p>vandaag 22:00 uur</p>
+                    </a>
+                    <a href="#shakira-biopage"
+                    data-transition="flip">
+                </a>
+                </li>
+            </ul><!-- /listview -->
+        </div><!-- /content-->
+
+
+        <div data-role="content" class="content" id="lastminutecontent"><br>
+            <ul data-role="listview">
+                <li id="pop" data-role="list-divider"
+                data-theme="b"> JAZZ</li>
+                <li id="shakira-concert">
+                   <a href="#shakira-biopage">
+                        <img class="poster" src="jazz.jpg">
+                        <h3>Stian Carstensen</h3>
+                        <p>AmsterdamArena</p>
+                        <p>vandaag 22:00 uur</p>
+                    </a>
+                    <a href="#shakira-biopage"
+                    data-transition="flip">
+                </a>
+                </li>
+            </ul><!-- /listview -->
+        </div><!-- /content-->
+
+
+        <div data-role="content" class="content" id="lastminutecontent"><br>
+            <ul data-role="listview">
+                <li id="pop" data-role="list-divider"
+                data-theme="b">METAL</li>
+                <li id="shakira-concert">
+                   <a href="#shakira-biopage">
+                        <img class="poster" src="rock.jpg">
+                        <h3>iron maiden</h3>
+                        <p>AmsterdamArena</p>
+                        <p>vandaag 22:00 uur</p>
+                    </a>
+                    <a href="#shakira-biopage"
+                    data-transition="flip">
+                </a>
+                </li>
+            </ul><!-- /listview -->
+        </div><!-- /content-->
+
+
+
+			<div class="content" id="homecontent" data-role="content">
+					<br><br>
+					<h1>Flashtix</h1>
+					<img id="poster" class="poster" src="poster.jpg">
+				</div><!-- einde homecontent -->
+
+
+				<div class="footer" data-role="footer" data-theme="b">
+					<div class="nav" data-role="controlgroup">
+						<div class="ui-grid-a">
+						<div class="ui-block-a">
+							<a class="knop" href="#agendapage"
+								data-role="button"
+								data-icon="grid"
+								data-iconpos="left">Agenda</a>
+						</div>
+						<div class="ui-block-b">
+							<a class="knop" href="#locationpage"
+							data-role="button"
+							data-icon="search"
+							data-iconpos="left">Location</a>
+						</div>
+						</div><!-- /grid-a -->
+					</div><!-- nav -->
+				</div><!-- /footer -->
+		</div><!-- /homepage -->
+		<div data-role="page" id="lastminutepage">
+			...
+		</div><!-- einde lastminutepage -->
+
+	</body>
+</html>
