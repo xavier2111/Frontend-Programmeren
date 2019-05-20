@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>string methods</title>
+</head>
+<body>
+    <script>
+        var title = 'javascript';
+        var string = "dit is een lange tekst met daarin het woord javascript";
+        document.write('index van letter s is: ' + title.indexOf('s'));
+        if(navigator.userAgent.indexOf('MSIE') != -1) {
+            document.write('<br>browser is internet explorer');
+        } else if(navigator.userAgent.indexOf('Firefox') != -1) {
+            document.write('<br>browser is firefox');
+        } else if(navigator.userAgent.indexOf('Chrome') != -1) {
+            document.write('<br>browser is Google Chrome');
+        } 
+        document.write('<br>');
+        var title1 = 'javascript';
+        var spiegeling = ''; for(x=0; x < title1.length; x++) {
+            teken = title.charAt(x);
+            spiegeling = teken + spiegeling;
+        }
+        document.write('<br>javascript spiegeling: ' + spiegeling);
+        document.write('<br>');
+        string = string.substr(0,string.indexOf('javascript')) + string.substr(string.indexOf('javascript') +10, string.length);
+        document.write('STRING IS NU: ' + string);
+        document.write('<br>')
+        var cursus = prompt('kies een van de volgende ' + 'cursussen html of javascript');
+        if (cursus.toLowerCase() == 'html' || cursus.toLowerCase() == 'javascript') {
+            document.write('je hebt: ' + cursus.toUpperCase() + 'gekozen.');
+        } else {
+            document.write('<br>kies een geldige cursus');
+        }
+    </script>
+</body>
+</html>
