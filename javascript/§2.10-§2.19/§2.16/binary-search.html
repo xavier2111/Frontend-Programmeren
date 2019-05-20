@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>binary search</title>
+    </head>
+<body>
+    <script>
+        var studenten = new Array(5);
+        studenten[0] = {'naam':'navajo', '06':'12345678'};
+        studenten[1] = {'naam':'stef', '06':'12351535'};
+        studenten[2] = {'naam':'tom', '06':'12345385'};
+        studenten[3] = {'naam':'peter', '06':'75343578'};
+        studenten[4] = {'naam':'charlie', '06':'15345435'};
+        function zoekalgoritme(studenten, key, imin, imax) {
+            if (imax < imin) {
+                return('niet gevonden');
+            } else {
+                imid = Math.ceil(imin + ((imax - imin) /2));
+                if (imid > key) {
+                    document.write('<br>onderste imin: ' + imin);
+                    document.write('<br>onderste imid: ' + imid);
+                    return(zoekalgoritme(studenten, key, imin, imid-1));
+                } else if (imid < key){
+                    document.write('<br>bovenste imax: ' + imax);
+                    document.write('<br>bovenste imid: ' + imid);
+                    return(zoekalgoritme(studenten, key, imid+1, imax));
+                } else {
+                    return(studenten[imid]['naam'] + studenten[imid]['06']);
+                }
+            }
+        }
+        var id = parseInt(prompt('zoek student id'));
+        var eindindex = studenten.length;
+        document.write('<br>eindindex: ' + eindindex + '<br>');
+        var beginindex = 0;
+        var student = zoekalgoritme(studenten, id, beginindex, eindindex);
+        document.write('student gevonden: ' + student);
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>opgave 94</title>
+    </head>
+<body>
+    <script>
+        var lengte = parseInt(prompt('voer een getal in: '));
+        piramide = new Array(lengte);
+        for(var i = 0; i <= lengte; i++) {
+            piramide[i] = i;
+        }
+        document.write(piramide);
+        for(var rij; rij <= lengte; rij++) {
+            document.write('<br>');
+        for(var i = 0; i < rij; i++) {
+            document.write(piramide[i]);
+        }
+        }
+    </script>
+</body>
+</html>
