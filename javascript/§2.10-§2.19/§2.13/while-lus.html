@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+<body>
+    <script>
+        var vandaag = new Date();
+        var uur = vandaag.getHours();
+        var minuten = vandaag.getMinutes();
+        var seconde = vandaag.getSeconds();
+        var millieseconden = vandaag.getMilliseconds();
+        var lus = millieseconden;
+        var finish = lus + 3;
+        document.write('while-lus begint om: ' + uur + ':' + minuten + ':' + seconde + ':' + millieseconden);
+        while(lus < finish) {
+            lus = new Date().getMilliseconds();
+            document.write('<br>deze lus om: ' + lus)
+        }
+        document.write('<br>while-lus eindigt om: ' + uur + ':' + minuten + ':' + seconde + ':' + lus);
+        /*if(lus == millieseconden +1) {
+            continue;
+        }*/
+        
+    </script>
+</body>
+</html>
