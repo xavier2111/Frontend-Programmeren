@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FlashTix</title>
+         <meta name="viewport"
+         content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+         <script src="http://code.jquery.com/jquery-1.11.1.min.js">
+         </script>
+         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
+         </script> 
+         
+         <link rel="stylesheet" href="flashtix.css">
+         <script src="flashtix.js"></script>
+    </head>
+<body>
+    <div data-role="page" class="page" id="homepage">
+    <div class="header" data-role="header" data-theme="b">
+        <div class="nav" data-role="controlgroup">
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <a class="knop" href="#homepage"
+                        data-role="button"
+                        data-icon="home"
+                        data-iconpos="left">home</a>
+                </div>
+                <div class="ui-block-b">
+                    <a class="knop" href="#homepage"
+                        data-role="button" >welkom</a>
+                </div>
+                <div class="ui-block-c">
+                    <a class="knop" href="#lastminutepage"
+                        data-role="button"
+                        data-icon="arrow-r"
+                        data-iconpos="left"
+                        data-transition="slidedown">lastminute</a>
+                </div>
+            </div><!-- /grid-b -->
+        </div> <!-- /nav -->
+    </div> <!-- /header -->
+    <div data-role="content" class="content" id="lastminutecontent"><br>
+        <ul data-role="listview">
+            <li id="pop" data-role="list-divider"
+            data-theme="b">pop</li>
+            <li id="shakira-concert">
+                <a href="#shakira-biopage">
+                    <img class="poster" src="shakiraposter.jpg">
+                    <h3>shakira</h3>
+                    <p>AmsterdamArena</p>
+                    <p>vandaag 22:00 uur</p>
+                </a>
+                <a href="#shakira-biopage"
+                data-transition="flip">
+            </a>
+            </li>
+            <li id="bruno-concert">
+                    <a href="#bruno-biopage">
+                        <img class="poster" src="bruno.jpg">
+                        <h3>bruno</h3>
+                        <p>AmsterdamArena</p>
+                        <p>vandaag 23:00 uur</p>
+                    </a>
+                    <a href="#bruno-biopage"
+                    data-transition="flip">
+                </a>
+                </li>
+                <ul data-role="listview">
+                        <li id="jazz" data-role="list-divider"
+                        data-theme="b">jazz</li>
+                        <li id="boef-concert">
+                            <a href="#boef-biopage">
+                                <img class="poster" src="boef.jpg">
+                                <h3>boef</h3>
+                                <p>AmsterdamArena</p>
+                                <p>morgen 00:00 uur</p>
+                            </a>
+                            <a href="#boef-biopage"
+                            data-transition="flip">
+                        </a>
+                        </li>
+                        <ul data-role="listview">
+                                <li id="rock" data-role="list-divider"
+                                data-theme="b">rock</li>
+                                <li id="michael-concert">
+                                    <a href="#michael-biopage">
+                                        <img class="poster" src="micheal.jpg">
+                                        <h3>michael</h3>
+                                        <p>AmsterdamArena</p>
+                                        <p>morgen 02:00 uur</p>
+                                    </a>
+                                    <a href="#michael-biopage"
+                                    data-transition="flip">
+                                </a>
+                                </li>
+        </ul><!-- /listview -->
+    </div><!-- /content-->
+    <div class="content" id="homecontent" data-role="content">
+        <br><br>
+        <h1>flashtix</h1>
+        <img id="poster" class="poster" src="logo1.jpg">
+    </div><!-- /einde homecontent -->
+    <div class="footer" data-role="footer" data-theme="b">
+        <div class="nav" data-role="controlgroup">
+            <div class="ui-grid-a"> 
+                <div class="ui-block-a">
+                    <a class="knop" href="#agendapage"
+                        data-role="button"
+                        data-icon="grid"
+                        data-iconpos="left">agenda</a>
+                </div>
+                <div class="ui-block-b">
+                        <a class="knop" href="#locationpage"
+                        data-role="button"
+                        data-icon="search"
+                        data-iconpos="left">location</a>
+                </div>
+            </div><!-- /grid-a -->
+        </div><!-- /nav -->
+    </div><!-- /footer-->   
+    </div><!-- /homepage -->
+    <div data-role="page" id="lastminutepage">
+
+    </div><!-- eindelastimute -->
+    <div data-role="page" id="shakira-biopage">
+        <div data-role="content">
+            <video controls="controls" width="90%"
+                preload id="video" poster="shakiraposter.jpg">
+                <source src="shakira.mp4" type="video/mp4">
+                <source src="shakira.webm" type="video/webm">
+                <source src="shakira.3gpp" type="video/3gpp">
+            </video><!-- einde video -->
+            <p>Aliquameratvolutpat. mauris vel nequesitamet nunc gravida conguesedsitametpurus. quisquelacusquam, egestactincidunt a, lacina vel velit. morbiac commodo nulla.</p>
+        </div><!-- einde content-->
+    </div><!-- einde shakira-biopage -->
+    <div data-role="page" id="jeniffer-biopage" data-content-theme="b">
+        <div data-role="page" class="page" id="homepage">
+            <div class="header" data-role="header" data-theme="b">
+                <div class="nav" data-role="controlgroup">
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">
+                            <a class="knop" href="#homepage"
+                                data-role="button"
+                                data-icon="home"
+                                data-iconpos="left">home</a>
+                        </div>
+                        <div class="ui-block-b">
+                            <a class="knop" href="#homepage"
+                                data-role="button" >welkom</a>
+                        </div>
+                        <div class="ui-block-c">
+                            <a class="knop" href="#lastminutepage"
+                                data-role="button"
+                                data-icon="arrow-r"
+                                data-iconpos="left"
+                                data-transition="slidedown">lastminute</a>
+                        </div>
+                    </div><!-- /grid-b -->
+                </div> <!-- /nav -->
+            </div> <!-- /header -->
+    </div><!-- einde jennifer biopage-->
+    <div data-role="page" id="nora biopage" data-content-theme="b">
+        <div data-role="page" class="page" id="homepage">
+            <div class="header" data-role="header" data-theme="b">
+                <div class="nav" data-role="controlgroup">
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">
+                            <a class="knop" href="#homepage"
+                                data-role="button"
+                                data-icon="home"
+                                data-iconpos="left">home</a>
+                        </div>
+                        <div class="ui-block-b">
+                            <a class="knop" href="#homepage"
+                                data-role="button" >welkom</a>
+                        </div>
+                        <div class="ui-block-c">
+                            <a class="knop" href="#lastminutepage"
+                                data-role="button"
+                                data-icon="arrow-r"
+                                data-iconpos="left"
+                                data-transition="slidedown">lastminute</a>
+                        </div>
+                    </div><!-- /grid-b -->
+                </div> <!-- /nav -->
+            </div> <!-- /header -->
+    </div><!-- einde nora biopage-->
+    <div data-role="page" id="bruce biopage" data-content-theme="b">
+        <div data-role="page" class="page" id="homepage">
+            <div class="header" data-role="header" data-theme="b">
+                <div class="nav" data-role="controlgroup">
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">
+                            <a class="knop" href="#homepage"
+                                data-role="button"
+                                data-icon="home"
+                                data-iconpos="left">home</a>
+                        </div>
+                        <div class="ui-block-b">
+                            <a class="knop" href="#homepage"
+                                data-role="button" >welkom</a>
+                        </div>
+                        <div class="ui-block-c">
+                            <a class="knop" href="#lastminutepage"
+                                data-role="button"
+                                data-icon="arrow-r"
+                                data-iconpos="left"
+                                data-transition="slidedown">lastminute</a>
+                        </div>
+                    </div><!-- /grid-b -->
+                </div> <!-- /nav -->
+            </div> <!-- /header -->
+    </div><!-- einde bruce biopage-->
+    <div data-role="page" id="bestelpage" class="page">
+        <div data-role="page" class="page" id="homepage">
+            <div class="header" data-role="header" data-theme="b">
+                <div class="nav" data-role="controlgroup">
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">
+                            <a class="knop" href="#homepage"
+                                data-role="button"
+                                data-icon="home"
+                                data-iconpos="left">home</a>
+                        </div>
+                        <div class="ui-block-b">
+                            <a class="knop" href="#homepage"
+                                data-role="button" >welkom</a>
+                        </div>
+                        <div class="ui-block-c">
+                            <a class="knop" href="#lastminutepage"
+                                data-role="button"
+                                data-icon="arrow-r"
+                                data-iconpos="left"
+                                data-transition="slidedown">lastminute</a>
+                        </div>
+                        <div data-role="content" class="content">
+                            <form name="form" id="form">
+                                <p>kies een concert</p>
+                                <input type="radio" name="concert" value="shakira">
+                                <label for="Shakira">Shakira</label>
+                                <input type="radio" name="concert" value="jennifer">
+                                <label for="jeniffer">jeniffer lopez</label>
+                                <input type="radio" name="concert" value="nora">
+                                <label for="nora">nora</label>
+                                <input type="radio" name="concert" value="bruce">
+                                <label for="bruce">bruce springstien</label>
+                                <label for="aantal">aantal sterren</label>
+                                <input type="range" name="aantal" id="aantal" min="1" max="3">
+
+                                <div data-role="fieldcontain">
+                                <input class="required" type="text" id="naam" name="naam" placholder="typ hier je naam">
+                                    <labelfor="minderjarig">minderjarig</label>
+                                    <select name="slider" id="minderjarig"data-role="slider" data-mini="true">
+                                        <option value="nee">nee</option>
+                                        <option value="ja">ja</option>
+                                        <input type="text" name="plaats" id="plaats" list="steden" placeholder="woonplaats">
+                                        <datalist="steden">
+                                        <option value="almere">
+                                        <option value="amstelveen">
+                                        <option value="amsterdam">
+                                        <option value="den haag">
+                                        <option value="hilversum">
+                                        <option value="Leeuwarden">
+                                        <option value="maastricht">
+                                        <option value="naarden">
+                                        <option value="utrecht">   
+                                    </datalist>
+                                    <textarea cols="35" rows="4" name="reactoe" id="reactie" placeholder="mail ons je reactie">    
+                                    </textarea>
+                                    <div data-role="controlgroup">
+                                        <p>kies een gratis abonnement</p>
+                                        <input type="checkbox" name="news" id="news">
+                                        <label for="news">flashtixnewsletter</label>
+                                        <input type="checkbox" name="gids" id="gids">
+                                        <label for="gids">uitgids</label>
+                                        <input type="checkbox" name="fest" id="fest">
+                                        <label for="fest">festival gids</label>
+                                    </div><!-- einde controlgroup -->
+                                </div><!-- einde fieldcontain -->
+                                <input type="submit" id="submit" value="verzend">
+                            </form><!-- einde formulier-->
+							<div data-role=="tabs" id="tabs">
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="#video" data-ajax="false">Video</a></li>
+                            <li><a href="#bio" data-ajax="false">Biografie</a></li>
+                        </ul>
+                    </div>
+                </div> <!-- einde tabs -->
+                <div id="twittercontent"></div>
+                <div id="video" class="ui-body-d ui-content">
+                    <h1>Video</h1>
+                    <video controls="controls" width="90%"
+                           preload id="video" poster="shakiraposter.jpg">
+                        <source src="shakira.mp4" type="video/mp4">
+                        <source src="shakira.webm" type="video/webm">
+                        <source src="shakira.3gpp" type="video/3gpp">
+                    </video> <!-- Einde video -->
+                </div>
+                <div data-role='page' class="page" id="eticketpage">
+                    . . .
+                </div> <!-- einde eticketspage -->
+                <div data-role='content' class="content">
+                    <div id="etickets"></div> 
+                </div> <!-- einde content -->
+                        </div><!-- /content-->
+                    </div><!-- /grid-b -->
+                </div> <!-- /nav -->
+            </div> <!-- /header -->
+    </div><!-- eind bestelpage -->
+</body>
+
+</html>
