@@ -1,0 +1,29 @@
+#mycanvas{
+	width: 330px;
+	height: 100px;
+	margin-bottom:40px;
+	border-radius: 10px;
+	background-color: #F7F387;
+}
+#agendalijst{
+  padding: 0 10px 0 10px;
+  list-style-type: none;
+  width: 95%;
+}
+.agendaitem{
+  padding: none;
+  background-color: #f7f387;
+  border: 0px;
+  border-bottom: 1px solid #3dd0b3;
+  text-align: left;
+}
+#itemdate{
+  background-color: #f7f387;
+  border: 0px;
+  width: 35%;
+}
+#itemtext{
+  background-color: #f7f387;
+  border: 0px;
+  width: 50%;
+}
